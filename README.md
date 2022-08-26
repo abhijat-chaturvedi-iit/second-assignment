@@ -6,7 +6,7 @@ I clone the repository using git clone command
 ## Step 2
 I downloaded the code using the following command
 
-curl <url of code> >> main.py
+curl url_of_code >> main.py
 
 This will copy the code in the file main.py
 
