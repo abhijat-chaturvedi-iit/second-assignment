@@ -1,28 +1,173 @@
 # second-assignment
 
-## Step 1
-I clone the repository using git clone command
+## Performance metrics from step 3
+run       svm                   decision_tree
+1   0.994475138121547           0.8895027624309392    
+2   0.9925925925925926          0.8888888888888888
+3   0.9916666666666667          0.8638888888888889
+4   0.9822222222222222          0.8511111111111112
+5   0.9851851851851852          0.825925925925926
+ 
+Mean for SVM = 0.9892283609576428
+Mean for DT = 0.8638635154491509
+STD for SVM = 0.004695216930853586
+STD for DT = 0.024023011720583607
 
-## Step 2
-I downloaded the code using the following command
+## Complete Log
+Image size in dataset (8, 8)
+Running for [0.8, 0.1, 0.1]
 
-curl url_of_code >> main.py
+                   parameters                train                  dev                 test
+0   {'gamma': 0.01, 'C': 0.1}  0.10716771050800278   0.0718232044198895  0.08379888268156424
+1    {'gamma': 0.01, 'C': 10}                  1.0  0.35911602209944754  0.40782122905027934
+2  {'gamma': 0.001, 'C': 0.1}   0.9700765483646486   0.9834254143646409   0.9441340782122905
+3  {'gamma': 0.001, 'C': 0.5}   0.9979123173277662    0.994475138121547   0.9832402234636871
 
-This will copy the code in the file main.py
 
-## Step 3
-Next I created the virtual environment
+Best hyperparameters were: 
+{'gamma': 0.0005, 'C': 1}
 
-## Step 4
-Run the program and install libraries that it asks for.
 
-## Step 5
-Generate requirements.txt using the following command
+Best accuracy on dev: 
+0.994475138121547
+Running for [0.7, 0.15, 0.15]
 
-pip freze > requirements.txt
+                   parameters                train                  dev                test
+0   {'gamma': 0.01, 'C': 0.1}  0.10501193317422435  0.08888888888888889  0.0962962962962963
+1    {'gamma': 0.01, 'C': 10}                  1.0   0.3962962962962963  0.3074074074074074
+2  {'gamma': 0.001, 'C': 0.1}   0.9626093874303898   0.9518518518518518  0.9592592592592593
+3  {'gamma': 0.001, 'C': 0.5}   0.9992044550517104   0.9814814814814815  0.9925925925925926
+4   {'gamma': 0.001, 'C': 10}                  1.0   0.9851851851851852  0.9888888888888889
+5  {'gamma': 0.0001, 'C': 10}                  1.0   0.9925925925925926  0.9814814814814815
 
-## Step 6
-Commit and push the changes.
 
-## How will code work on other machines
-The code will work on other machines is we make virtual environments and add proper requirements.txt to install dependencies.
+Best hyperparameters were: 
+{'gamma': 0.0005, 'C': 1}
+
+
+Best accuracy on dev: 
+0.9925925925925926
+Running for [0.6, 0.2, 0.2]
+
+                    parameters               train                  dev                 test
+0    {'gamma': 0.01, 'C': 0.1}  0.2077922077922078  0.11944444444444445  0.12813370473537605
+1     {'gamma': 0.01, 'C': 10}                 1.0   0.3888888888888889   0.3732590529247911
+2   {'gamma': 0.001, 'C': 0.1}  0.9601113172541744   0.9361111111111111   0.9554317548746518
+3   {'gamma': 0.001, 'C': 0.5}  0.9990723562152134   0.9777777777777777   0.9944289693593314
+4   {'gamma': 0.001, 'C': 0.4}  0.9953617810760668   0.9805555555555555   0.9916434540389972
+5    {'gamma': 0.001, 'C': 10}                 1.0   0.9888888888888889   0.9916434540389972
+6  {'gamma': 0.0005, 'C': 0.5}  0.9953617810760668   0.9916666666666667   0.9888579387186629
+
+
+Best hyperparameters were: 
+{'gamma': 0.0005, 'C': 1}
+
+
+Best accuracy on dev: 
+0.9916666666666667
+Running for [0.5, 0.25, 0.25]
+
+                   parameters                train                  dev                 test
+0   {'gamma': 0.01, 'C': 0.1}  0.10690423162583519  0.08444444444444445  0.09799554565701558
+1    {'gamma': 0.01, 'C': 10}                  1.0  0.29555555555555557  0.34075723830734966
+2  {'gamma': 0.001, 'C': 0.1}   0.9565701559020044   0.9266666666666666   0.9420935412026726
+3  {'gamma': 0.001, 'C': 0.5}                  1.0   0.9777777777777777    0.977728285077951
+4   {'gamma': 0.001, 'C': 10}                  1.0                 0.98   0.9866369710467706
+5  {'gamma': 0.0005, 'C': 10}                  1.0   0.9822222222222222   0.9866369710467706
+
+
+Best hyperparameters were: 
+{'gamma': 0.0005, 'C': 1}
+
+
+Best accuracy on dev: 
+0.9822222222222222
+Running for [0.4, 0.3, 0.3]
+
+                   parameters                train                  dev                 test
+0   {'gamma': 0.01, 'C': 0.1}  0.11281337047353761  0.09074074074074075  0.08719851576994433
+1    {'gamma': 0.01, 'C': 10}                  1.0  0.18518518518518517  0.17068645640074212
+2  {'gamma': 0.001, 'C': 0.1}   0.9317548746518106   0.8611111111111112   0.8905380333951762
+3  {'gamma': 0.001, 'C': 0.5}                  1.0   0.9611111111111111   0.9777365491651205
+4   {'gamma': 0.001, 'C': 10}                  1.0   0.9777777777777777   0.9814471243042672
+5  {'gamma': 0.0005, 'C': 10}                  1.0   0.9851851851851852   0.9851576994434137
+
+
+Best hyperparameters were: 
+{'gamma': 0.0005, 'C': 1}
+
+
+Best accuracy on dev: 
+0.9851851851851852
+Running for [0.8, 0.1, 0.1]
+
+  parameters              train                 dev                test
+0         10  0.988865692414753  0.8784530386740331   0.888268156424581
+1         20                1.0  0.8895027624309392  0.8994413407821229
+
+
+Best hyperparameters were: 
+40
+
+
+Best accuracy on dev: 
+0.8895027624309392
+Running for [0.7, 0.15, 0.15]
+
+  parameters               train                 dev                test
+0         10  0.9824980111376292  0.8666666666666667  0.8555555555555555
+1         20                 1.0  0.8740740740740741  0.8740740740740741
+2         40                 1.0  0.8888888888888888  0.8962962962962963
+
+
+Best hyperparameters were: 
+40
+
+
+Best accuracy on dev: 
+0.8888888888888888
+Running for [0.6, 0.2, 0.2]
+
+  parameters               train                 dev                test
+0         10  0.9888682745825603                0.85  0.8467966573816156
+1         20                 1.0  0.8638888888888889  0.8551532033426184
+
+
+Best hyperparameters were: 
+40
+
+
+Best accuracy on dev: 
+0.8638888888888889
+Running for [0.5, 0.25, 0.25]
+
+  parameters               train                 dev                test
+0         10  0.9810690423162584  0.8266666666666667  0.8641425389755011
+1         30                 1.0  0.8511111111111112  0.8663697104677061
+
+
+Best hyperparameters were: 
+40
+
+
+Best accuracy on dev: 
+0.8511111111111112
+Running for [0.4, 0.3, 0.3]
+
+  parameters               train                 dev                test
+0         10  0.9888579387186629  0.7981481481481482  0.8181818181818182
+1         20                 1.0  0.8018518518518518  0.8144712430426716
+2         30                 1.0   0.825925925925926  0.8218923933209648
+
+
+Best hyperparameters were: 
+40
+
+
+Best accuracy on dev: 
+0.825925925925926
+Mean for SVM = 0.9892283609576428
+Mean for DT = 0.8638635154491509
+STD for SVM = 0.004695216930853586
+STD for DT = 0.024023011720583607
+101
